@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 .grid-container {
-    background-color: rgb(124, 61, 61);
+    background-color: rgb(144, 223, 243);
 }
 
 .grid-item2 {
     background-color: rgb(255, 143, 236);
 }
 .grid-item1 {
-    background-color: rgb(84, 218, 113);
+    background-color: rgb(187, 84, 218);
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
