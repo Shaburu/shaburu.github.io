@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" href="favicon.ico" type="image/ico"> 
     <title>SHABURU</title>
-    <embed height="0" width="0"
-  src="http://youtube.googleapis.com/v/y90yaLFoYoA&autoplay=1&loop=1" />
+
 </head>
 <body >
-  <video autoplay muted loop id="myVideo">
-    <source src="https://youtube.com/embed/yaI2WBEZ5eI?autoplay=1&mute=1&controls=1" type="video/mp4">
-  </video>
-  
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%" id=myVideo>
+    <iframe frameborder="0" height="100%" width="100%"
+      src="https://youtube.com/embed/yaI2WBEZ5eI?autoplay=1&mute=1" >
+    </iframe>
+  </div>
   <!---
   <div style="position: background; z-index: -99; width: 100%; height: 100%">
     <iframe frameborder="0" height="100%" width="100%"
