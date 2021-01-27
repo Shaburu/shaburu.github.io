@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+  }
+
+.bg {
+  /* The image used */
+  background-image: url("bg\ wo\ crows.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bounce {
+  width: 100px;
+  height: 100px;
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  
+}
+
+
+@keyframes example {
+    0%   {left:300px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:600px; top:500px;}
+    75%  {left:0px; top:200px;}
+    100% {left:300px; top:400px;}
+  }
