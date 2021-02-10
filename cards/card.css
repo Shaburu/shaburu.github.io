@@ -258,3 +258,19 @@ a {
     background-clip: text;
     border-color: white;
 }
+
+#myVideo {
+    var vid = document.getElementById("myVideo");
+    vid.loop = true; 
+}
+
+.video {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: scroll;
+    scroll-snap-align: center;
+    clear: both;
+    position: relative;
+}
+
