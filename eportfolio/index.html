@@ -10,22 +10,24 @@
 
 </head>
 <body>
-    <section>
+    <section class="moveable-assets">
         <img src="topbg.png" id="bg">
         <img src="skateboard.png" id="skate">
         <img src="groundFeet.png" id="feet">
         <img src="tree.png" id="tree"> <!--make calss -->
-        <img src="me.png" id="me" id="me">
+        <img src="me.png" id="me">
+        <img src="jeff.png" id="jeff">
         <h2 id="text" align="center">SHABURU</h2>
     </section>
     
-    <script type="text/javascript">
+    <script type="text/javascript" >
         let bg = document.getElementById("bg");
         let tree = document.getElementById("tree");
         let skate = document.getElementById("skate");
         let text = document.getElementById("text");
         let feet = document.getElementById("feet");
         let me = document.getElementById("me");
+        let jeff = document.getElementById("jeff");
 
         window.addEventListener('scroll', function(){
             var value = window.scrollY;
@@ -35,12 +37,16 @@
             text.style.top = value *1 + 'px';
             text.style.right = value *1 + 'px';
             tree.style.left = -value *0.2 + 'px';
+            jeff.style.left = value *0.2 + 'px';
         })
     </script>
     
-    <section>
+    <section >
         <h2 class="reveal-text">'s PORTFOLIO</h2>
-        <h2 class="description">TEST 1 </h2>
+        <h2 class="content">Sarthak Chowdhary aka Shaburu</h2>
+    </section>
+    <section  class="description">
+        <h2 >Sarthak Chowdhary aka Shaburu</h2>
     </section>
     <h1 class="reveal-text" id="here">
         I'm here.
@@ -49,18 +55,27 @@
                 
             window.addEventListener('scroll', function(){
                 var value = window.scrollY;
-                here.style.right = value *0.5 + 'px';
+                here.style.right = value *0.4 + 'px';
                 
             })
         </script>
     </h1>
-    <section>
-        <h2 class="heading">TEST</h2>
-    </section>
-    <section>
+
+    
+    
+      <section>
         <h2 class="heading">test 2 </h2>
     </section>
     
+    <script src="aos.js"></script>
     
+    <section>
+        <h2 class="heading">test 3 </h2>
+    </section>
+
+
+    <section>
+        <h2 class="heading">test 4 </h2>
+    </section>
 </body>
 </html>
