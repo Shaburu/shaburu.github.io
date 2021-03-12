@@ -10,8 +10,37 @@
 
 </head>
 <body>
+    <section>
+        <img src="topbg.png" id="bg">
+        <img src="skateboard.png" id="skate">
+        <img src="me.png" id="me" id="me">
+        <img src="groundFeet.png" id="feet">
+        <img src="tree.png" id="tree"> <!--make calss -->
+        <h2 id="text">SHABURU PORTFOLIO</h2>
+    </section>
+    
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let tree = document.getElementById("tree");
+        let skate = document.getElementById("skate");
+        let text = document.getElementById("text");
+        let feet = document.getElementById("feet");
+        let me = document.getElementById("me");
 
-  
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value *0.5 + 'px';
+        })
+    </script>
+    
+    <section>
+        <h2>TEST</h2>
+    </section>
+    <section>
+        <h2>TEST</h2>
+    </section>
+    
     
 </body>
 </html>
