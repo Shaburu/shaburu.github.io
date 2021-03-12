@@ -197,12 +197,6 @@ section img
 }
 
 
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
-
 a {
     text-decoration: none;
 }
@@ -351,11 +345,6 @@ a {
     -webkit-box-decoration-break: clone;
     background-clip: text;
     border-color: rgb(204, 57, 82);
-}
-
-#myVideo {
-    var vid = document.getElementById("myVideo");
-    vid.loop = true; 
 }
 
 .video {
