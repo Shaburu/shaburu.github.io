@@ -10,14 +10,14 @@
 
 </head>
 <body>
-    <section class="moveable-assets">
+    <section >
         <img src="topbg.png" id="bg">
         <img src="skateboard.png" id="skate">
         <img src="groundFeet.png" id="feet">
-        <img src="tree.png" id="tree"> <!--make calss -->
+        <img src="tree.png" id="tree"> 
         <img src="me.png" id="me">
         <img src="jeff.png" id="jeff">
-        <h2 id="text" align="center">SHABURU</h2>
+        <h2 id="text" >SHABURU</h2>
     </section>
     
     <script type="text/javascript" >
@@ -33,23 +33,24 @@
             var value = window.scrollY;
 
             bg.style.bottom = value *0.5 + 'px';
-            me.style.top = +value *.6 + 'px';
-            text.style.top = value *1 + 'px';
-            text.style.right = value *1 + 'px';
+            me.style.top = +value *0.6 + 'px';
+            text.style.top = value *0.6 + 'px';
             tree.style.left = -value *0.2 + 'px';
             jeff.style.left = value *0.2 + 'px';
         })
     </script>
     
     <section >
-        <h2 class="reveal-text">'s PORTFOLIO</h2>
-        <h2 class="content">Sarthak Chowdhary aka Shaburu</h2>
+        <h2 class="textPort" id="textPort">'s PORTFOLIO</h2>
+        <div class="content"> 
+           <h2 >CONTENT ABOUT MY SELF YADA YADAY ADA </h2>
+        </div>
     </section>
     <section  class="description">
         <h2 >Sarthak Chowdhary aka Shaburu</h2>
     </section>
     <h1 class="reveal-text" id="here">
-        I'm here.
+        Acedemia
         <script type="text/javascript">
             let here = document.getElementById("here");
                 
@@ -73,6 +74,374 @@
         <h2 class="heading">test 3 </h2>
     </section>
 
+    <section >
+        <div class="card-list">
+        <article class="card">
+          <header class="card-header">
+            <p>Youtube</p>
+            <h2>Films, Art Projects</h2>
+          </header>
+         <!--
+          <iframe width="100%" height="50%" src="https://www.youtube.com/embed/LhToII7SBBk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        -->
+        <div class="youtubevid">
+          <iframe width="100%" height="120%" src="https://www.youtube.com/embed/yaI2WBEZ5eI?mute=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+          <div class="card-author">
+            <a class="author-avatar" href="https://www.youtube.com/channel/UCl9xayO7chFY1OfsPVn7Org/videos?sub_confirmation=1" target="_blank">
+              <img src="avatar.gif" />
+            </a>
+            
+  
+            <div class="author-name">
+              <div class="author-name-prefix">YT Art channel</div>
+              Shaburux
+            </div>
+          </div>
+          <div class="tags">
+            <a href="https://www.youtube.com/channel/UCl9xayO7chFY1OfsPVn7Org/videos?sub_confirmation=1" target="_blank">CLICK TO SUBSCRIBE</a>
+          </div>
+        </article>
+  
+  
+  
+        <article class="card">
+          <header class="card-header">
+            <p>Spotify</p>
+            <h2>Podcast on spotify</h2>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2pJUfXV5kpyzDbi06f51SL" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4bt1LeaGEPK7oBXO6MDOS9" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </header>
+  
+          <div class="card-author">
+            <a class="author-avatar" href="https://open.spotify.com/show/4mTWNQ8cclbh47B6VL5fOu?si=7EK8WkAeQ2GZrtwN6ok0ug" target="_blank">
+              <img src="spotify.png" />
+            </a>
+           
+            <div class="author-name">
+              <div class="author-name-prefix">Spotify Podcast</div>
+              Faucet Podcast
+            </div>
+          </div>
+          <div class="tags">
+            <a href="https://open.spotify.com/show/4mTWNQ8cclbh47B6VL5fOu?si=7EK8WkAeQ2GZrtwN6ok0ug" target="_blank">listen on spotify</a>
+          </div>
+        </article>
+  
+        <article class="card">
+            <header class="card-header">
+              <p>Youtube Podcast</p>
+              <h2>Youtube Podcast</h2>
+            </header>
+            <div class="youtubevid">
+            <iframe width="100%" height="120%" src="https://www.youtube.com/embed/HHGu-ltgG6w?autoplay=0&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.youtube.com/channel/UCCV26GWyJwEM6IyNwC7IK9w/videos?sub_confirmation=1" target="_blank">
+                <img src="youtube.ico" />
+              </a>
+              <div class="author-name">
+                <div class="author-name-prefix">Youtube Podcast</div>
+                Faucet Podcast
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.youtube.com/channel/UCCV26GWyJwEM6IyNwC7IK9w/videos?sub_confirmation=1">Click To Subscribe</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Itch io</p>
+              <h2>Download My Video Games! FREE!</h2>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbcj2YFlRaid-vDE_MowgYOURaiXh4meSDnoGX3XNgFeUblQ/viewform?embedded=true" width="100%" height="120%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://shaburu.itch.io/" target="_blank">
+                <img src="itchio.png" />
+              </a>
+    
+              <div class="author-name">
+                <div class="author-name-prefix">Entertainment</div>
+                Falhofner Entertainment Inc.
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://shaburu.itch.io/" target="_blank">Check out the store on Itch</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Youtube</p>
+              <h2>Garbage Content</h2>
+              <iframe width="110%" height="155%" src="https://www.youtube-nocookie.com/embed/LOGa7kGy2LQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.youtube.com/channel/UCGmwOG6w55Ej4z7iUw7A4_g?sub_confirmation=1" target="_blank">
+                <img src="youtube.ico" />
+              </a>
+    
+              <div class="author-name">
+                <div class="author-name-prefix">Rants</div>
+                Shaburu Fictional Character
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.youtube.com/channel/UCGmwOG6w55Ej4z7iUw7A4_g?sub_confirmation=1" target="_blank">Click To Subscribe!</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Instagram</p>
+              <h2>Face Filters!</h2>
+    
+              <div class="video" >
+    
+              <a href="https://www.instagram.com/ar/151586239545252/" target="_blank">
+              <video  width="100%" height="100%" muted autoplay loop>
+                <source src="catInstaFilterDemo.mp4" type="video/mp4">
+              </video>
+             </a>
+    
+             <a href="https://www.instagram.com/ar/706251680098962/" target="_blank">
+              <video width="120%" height="120%" muted autoplay loop>
+                <source src="TrexDemoVid.mp4" type="video/mp4">
+              </video>
+             </a>
+            
+             <a href="https://www.instagram.com/ar/198749304558423/" target="_blank">
+              <video  width="100%" height="100%" muted autoplay loop>
+                <source src="minecraftSteveHead.mp4" type="video/mp4">
+              </video>
+             </a>
+    
+              </div>
+            
+          
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.instagram.com/shaburux/" target="_blank">
+                <img src="instagram.png" />
+              </a>
+    
+    
+              <div class="author-name">
+                <div class="author-name-prefix">Instagram Filters</div>
+                Shaburux
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.instagram.com/shaburux/" target="_blank">Face Filters!</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Youtube</p>
+              <h2>Coding Tutorials</h2>
+              <a href="https://www.youtube.com/channel/UCW6gHFyWADcW8SSg7ItwPxg?sub_confirmation=1" target="_blank">
+              <div class="youtubevid">
+                <iframe width="110%" height="155%" src="https://www.youtube-nocookie.com/embed/Si3mAwoXu0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.youtube.com/channel/UCW6gHFyWADcW8SSg7ItwPxg?sub_confirmation=1" target="_blank">
+                <img src="youtube.ico" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix"> fast paced only info shit</div>
+                Syntax Shaburu
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.youtube.com/channel/UCW6gHFyWADcW8SSg7ItwPxg?sub_confirmation=1" target="_blank">CLICK TO JOIN</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Instagram</p>
+              <h2>Picture Aesthetic Edits</h2>
+              <a href="https://www.instagram.com/_boujee_edits_/" target="_blank"><img src="mainINsta.png" width="100%" height="80%"></a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.instagram.com/_boujee_edits_/" target="_blank">
+                <img src="instagram.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">OverThe TOP edits</div>
+                by Shaburu
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.instagram.com/_boujee_edits_/" target="_blank">VAPOURWAVE</a>
+            </div>
+          </article>
+          
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Instagram</p>
+              <h2>Insta skate Edits</h2>
+              <div class="youtubevid">
+              <a href="https://www.instagram.com/shaburux/" target="_blank">
+                
+                <iframe width="110%" height="155%" src="https://www.youtube.com/embed/VjawpuYIx8M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+              </a>
+              </div>
+             
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.instagram.com/shaburux/" target="_blank">
+                <img src="instagram.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">Instagram</div>
+                @shaburux
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.instagram.com/shaburux/" target="_blank">Follow me</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Twitter</p>
+              <h2>imma bad bih</h2>
+              <blockquote class="twitter-tweet"><p lang="en" dir="ltr">👉👈😳 what if i stuffed you for Thanksgiving? <a href="https://t.co/bbQAWoXFMV">pic.twitter.com/bbQAWoXFMV</a></p>&mdash; ShaburuX (@ShaburuX) <a href="https://twitter.com/ShaburuX/status/1332210553264119808?ref_src=twsrc%5Etfw">November 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://twitter.com/shaburux" target="_blank">
+                <img src="twitter.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">Twitter</div>
+                @shaburux
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://twitter.com/shaburux" target="_blank">follow on twitter</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Discord</p>
+              <h2>Discord Server</h2>
+              <a href="https://discord.gg/tMqBjPv489" target="_blank"><img src="discord.png" width="100%" height="80%"></a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://discord.gg/tMqBjPv489" target="_blank">
+                <img src="discord.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix"> we make money moves</div>
+                Shaburu
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://discord.gg/tMqBjPv489" target="_blank">CLICK TO JOIN</a>
+            </div>
+          </article>
+    
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Reddit</p>
+              <h2>Go Crazy Go Stupid Subreddit</h2>
+              <a href="https://www.reddit.com/r/shaburu/" target="_blank"><img src="redditShaburu.png" width="90%" height="80%"></a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.reddit.com/r/shaburu/" target="_blank">
+                <img src="reddit.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">Subreddit</div>
+                Shaburu
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.reddit.com/r/shaburu/" target="_blank">Join The Subreddit</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Reddit</p>
+              <h2>ShaburuX subreddit</h2>
+              <a href="https://www.reddit.com/r/shaburux/" target="_blank"><img src="redditShaburux.png" width="90%" height="80%"></a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://www.reddit.com/r/shaburux/" target="_blank">
+                <img src="reddit.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">Subreddit</div>
+                ShaburuX
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://www.reddit.com/r/shaburux/" target="_blank">Join The Subreddit</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <header class="card-header">
+              <p>Medium</p>
+              <h2>Articles Journalism</h2>
+              <a href="https://medium.com/@shaburu" target="_blank"><img src="roundmedium.png" width="90%" height="80%"></a>
+              
+            </header>
+    
+            <div class="card-author">
+              <a class="author-avatar" href="https://medium.com/@shaburu" target="_blank">
+                <img src="medium.png" />
+              </a>
+              
+              <div class="author-name">
+                <div class="author-name-prefix">writer?</div>
+                Shaburu
+              </div>
+            </div>
+            <div class="tags">
+              <a href="https://medium.com/@shaburu" target="_blank">Read My Articles</a>
+            </div>
+          </article>
+  
+  
+        
+  
+        </div>
+   </section>
 
     <section>
         <h2 class="heading">test 4 </h2>
