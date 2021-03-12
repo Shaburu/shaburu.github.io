@@ -76,7 +76,14 @@ section img
 
 #textPort
 {
-    text-align: end;
+    text-align: right;
     color: whitesmoke;
     font-size: 7em;
+    background: pink;
+}
+
+.heading 
+{
+    color: plum;
+    font-size: 10em;
 }
