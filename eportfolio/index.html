@@ -39,8 +39,21 @@
     </script>
     
     <section>
-        <h2 id="textPort">'s PORTFOLIO</h2>
+        <h2 class="reveal-text">'s PORTFOLIO</h2>
+        <h2 class="description">TEST 1 </h2>
     </section>
+    <h1 class="reveal-text" id="here">
+        I'm here.
+        <script type="text/javascript">
+            let here = document.getElementById("here");
+                
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+                here.style.right = value *0.5 + 'px';
+                
+            })
+        </script>
+    </h1>
     <section>
         <h2 class="heading">TEST</h2>
     </section>
