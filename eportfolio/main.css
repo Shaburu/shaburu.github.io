@@ -150,6 +150,18 @@ section img
     font-size: 2em;
     z-index: 2;
 }
+.contentr
+{
+    position: absolute;
+    text-align: left;
+    color: powderblue;
+    padding-top: 10%;
+    padding-left: 70%;
+    padding-right: 2%;
+    font-size: 2em;
+    z-index: 2;
+}
+
 .keynotes
 {
     position: absolute;
@@ -544,7 +556,7 @@ a {
 }
 
 .course {
-    padding-top: 10em;
+    padding-top: 15em;
     padding-left: 2em;
     padding-bottom: 2em;
     display: flex;
