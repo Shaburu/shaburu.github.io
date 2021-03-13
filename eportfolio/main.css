@@ -416,7 +416,7 @@ a {
 }
 
 .card:hover {
-    transform: translateY(-1rem);
+    transform: translateY(1.5rem);
 }
 
 .card:not(:first-child) {
@@ -569,4 +569,26 @@ a {
  
  .circle:hover {
     background-position: left bottom;
+}
+
+
+.contact h1 {
+    font-size: 200px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: .25rem 0 auto;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    color: white;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contact h1:hover {
+    background: linear-gradient(90deg, rgb(204, 57, 82),rgb(117, 210, 223));
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
