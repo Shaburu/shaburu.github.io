@@ -665,7 +665,8 @@ ul li a:before{
 }
 
 ul li a:hover:before{
-    
+    left: calc(100% +100px)
+}
 
 
 .footer{
