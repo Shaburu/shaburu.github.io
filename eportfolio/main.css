@@ -11,9 +11,9 @@ body
     max-width: 1500px;
 }
 
-section 
+section
 {
-    position: relative
+    position: initial;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -21,6 +21,27 @@ section
     align-items:center;
 }
 /*
+.bounce
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 3em;
+    animation: bounce;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0%   {left:300px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:600px; top:500px;}
+    75%  {left:0px; top:200px;}
+    100% {left:300px; top:400px;}
+  }
+
+
 section :before
 {
     content: '';
@@ -103,20 +124,35 @@ section img
     color: powderblue;
     font-weight: bolder;
     font-size: 3em;
-    padding-left: 9em;
-    display: flex;
+    padding-left: 6em;
 }
 
 .content
 {
     position: absolute;
-    text-align: justify;
+    text-align: left;
     color: powderblue;
-    padding-top: 3em;
+    background-color: rgba(14, 13, 13, 0.212);
+    padding-top: 10%;
+    padding-left: 2%;
     padding-right: 60%;
     font-size: 2em;
     z-index: 2;
 }
+.keynotes
+{
+    position: absolute;
+    text-align: left;
+    color: powderblue;
+    background: linear-gradient(180deg, rgb(204, 57, 82),rgb(14, 13, 13));
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 40%;
+    font-size: 5em;
+    width: 100%;
+    height: 10%;
+}
+
 
 :root {
 	--delay: 0;
@@ -127,7 +163,7 @@ section img
 .reveal-text,
 .reveal-text::after {
 	animation-delay: var(--animation-delay, 4s);
-	animation-iteration-count: var(--iterations, 1);
+	animation-iteration-count: infinite;
 	animation-duration: var(--duration, 800ms);
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
@@ -142,7 +178,7 @@ section img
 	animation-name: clip-text;
     text-align: right;
     color: rgb(14, 13, 13);
-    background-color: pink;
+    background-color: rgb(204, 57, 82);
     font-size: 7em;
 	white-space: nowrap;
 	cursor: default;
@@ -165,6 +201,83 @@ section img
 	
 }
 
+.reveal-text-cb,
+.reveal-text-cb::after {
+	animation-delay: var(--animation-delay, 4s);
+	animation-iteration-count: infinite;
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.reveal-text-cb {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 10vw;
+	animation-name: clip-text;
+    text-align: left;
+    background: linear-gradient(90deg, rgb(204, 57, 82),rgb(117, 210, 223));
+    color: rgb(14, 13, 13);
+    font-size: 7em;
+	white-space: nowrap;
+	cursor: default;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+        display: flex;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+
+.reveal-text-sk,
+.reveal-text-sk::after {
+	animation-delay: var(--animation-delay, 4s);
+	animation-iteration-count: infinite;
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.reveal-text-sk {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 10vw;
+	animation-name: clip-text;
+    text-align: right;
+    background: linear-gradient(180deg, rgb(14, 13, 13),rgb(204, 57, 82));
+    color: rgb(14, 13, 13);
+    font-size: 7em;
+	white-space: nowrap;
+	cursor: default;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+        display: flex;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
 
 @keyframes clip-text {
 	from {
@@ -195,6 +308,10 @@ section img
 		transform: scaleX(0);
 	}
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 
 a {
@@ -365,3 +482,4 @@ a {
     position: relative; 
     align-items:flex-end;  
 }
+
