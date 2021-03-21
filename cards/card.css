@@ -39,8 +39,8 @@ a {
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: linear-gradient(45deg,#a896cc,#a896cc, white,#a896cc, #a896cc);
-    box-shadow: -1rem 0 3rem #a896cc;
+    background: linear-gradient(45deg,#a896cc,#a896cc,#a896cc, #a896cc);
+    box-shadow: -1rem 0 3rem #776894;
     display: flex;
     flex-direction: column;
     transition: .2s;
@@ -213,7 +213,7 @@ a {
 .author-name-prefix {
     font-style: normal;
     font-weight: 700;
-    color: #7a7a8c;
+    color: #27273f;
 }
 
 .half-circle {
@@ -240,7 +240,7 @@ a {
     font-style: normal;
     font-weight: 700;
     font-size: .5rem;
-    color: #7a7a8c;
+    color: #16161d;
     text-transform: uppercase;
     font-size: .66rem;
     border: 3px solid #28242f;
@@ -250,13 +250,13 @@ a {
 }
 
 .tags a:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background: linear-gradient(90deg,rgb(255, 70, 101),rgb(56, 86, 252));
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
     background-clip: text;
-    border-color: white;
+    border-color: rgb(255, 70, 101);
 }
 
 #myVideo {
