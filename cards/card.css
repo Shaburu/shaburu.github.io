@@ -102,12 +102,12 @@ a {
 .cardBusiness {
     height: 540px;
     width: 400px;
-    opacity: 60%;
+    opacity: 100%;
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: #41969c;
-    box-shadow: -1rem 0 3rem #000;
+    background: #fcff51;
+    box-shadow: -1rem 0 3rem rgb(231, 189, 189);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,14 +159,14 @@ a {
 .cardBusiness-header p {
     font-size: 14px;
     margin: 0 0 1rem;
-    color: #7a7a8c;
+    color: #1d1d1d;
 }
 
 .cardBusiness-header h2 {
     font-size: 20px;
     margin: .25rem 0 auto;
     text-decoration: none;
-    color: white;
+    color: rgb(46, 13, 13);
     border: 0;
     display: inline-block;
     cursor: pointer;
@@ -214,6 +214,12 @@ a {
     font-style: normal;
     font-weight: 700;
     color: #27273f;
+}
+
+.authorb-name-prefix {
+    font-style: normal;
+    font-weight: 700;
+    color: #5b5ba0;
 }
 
 .half-circle {
