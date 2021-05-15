@@ -1,36 +1,314 @@
-body, html {
-    height: 100%;
-  }
+/* HTML elements ---------------------------------------------------------------------------------------------------------- */
 
-.bg {
-  /* The image used */
-  background-image: url("bg\ wo\ crows.png");
-
-  /* Full height */
+html {
+  width: 100%;
   height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.bounce {
-  width: 100px;
-  height: 100px;
-  
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: url("img/dots.png") repeat center top;
+  background-size: 29px 29px;
+}
+
+img {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: #1a1a1a;
+}
+
+a:hover {
+  color: #3b424f;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/* IDs ---------------------------------------------------------------------------------------------------------- */
+
+#mainpage {
+  width: 1080px;
+  height: auto;
+  min-height: 100%;
+  margin: 0px auto;
+  padding: 0px 11px 0px 11px;
+
+  background-color: #ffffff;
+  background-image: none;
+}
+
+#mainheader {
+  width: 840px;
+  height: 186px;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+
+  /*background-color:#ED63B3;*/
+}
+
+#gamescontent {
+  width: 840px;
+  height: 100%;
+  padding: 0px 0px 20px 0px;
+  margin: 0px;
+  float: left;
+
+  /*background-color:#76DA83;*/
+}
+
+#linkscontent {
+  width: 240px;
+  padding: 6px 0px 0px 0px;
+  margin: 0px;
+  float: right;
+
+  /*background-color:#EE9D62;*/
+}
+
+#logo {
+  width: 200px;
+  text-align: left;
+  padding: 14px 10px 5px 0px;
+  float: left;
+}
+
+#logo img {
+  width: 200px;
+  height: 152px;
+}
+
+#info {
+  width: 305px;
+  text-align: left;
+  padding: 18px 7px 0px 20px;
+  margin: 0px;
+  color: #373e4b;
+  float: left;
+}
+
+#info p {
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+
+#blog {
+  width: 300px;
+  text-align: left;
+  padding: 6px 0px 0px 5px;
+  margin: 0px;
+  color: #1a1a1a;
+  float: left;
+}
+
+/* Classes ---------------------------------------------------------------------------------------------------------- */
+
+.title {
+  height: 10px;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+  font-size: 10pt;
+  color: #8b929c;
+}
+
+.imagegroup {
+  height: 100%;
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+}
+
+.imagegroup h3 {
+  font-size: 13pt;
+  border: 0px;
+  margin: 0px 0px 4px 0px;
+}
+
+.link {
+  float: left;
+  width: 150px;
+  padding: 0px 10px 10px 0px;
+  margin: 0px;
+  background: url("img/linkbg.png") no-repeat left top;
+}
+
+.linktall {
+  background: url("img/linkbgtall.png") no-repeat left top;
+}
+
+.game {
+  float: left;
+  width: 200px;
+
+  padding: 0px 10px 10px 0px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: 9pt;
+  background: url("img/gamebg.png") no-repeat left top;
+}
+
+.promo {
+  width: 830px;
+  height: 150px;
+  background: url("img/promobg.png") no-repeat left top;
+}
+
+.promobig {
+  width: 830px;
+  height: 177px;
+  background: url("img/promobigbg.png") no-repeat left top;
+}
+
+.promohalf {
+  width: 410px;
+  height: 150px;
+  background: url("img/promohalf.png") no-repeat left top;
+}
+
+.promo p {
+  padding: 6px 0px 0px 0px;
+  margin: 0px;
+}
+
+.promobig p {
+  padding: 6px 0px 0px 0px;
+  margin: 0px;
+}
+
+.imagegroup .roll {
+  display: block;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  
+  background: #ffffff;
+  text-decoration: none;
 }
 
+.bloglink {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 0px;
+  padding: 0px;
+}
 
-@keyframes example {
-    0%   {left:300px; top:0px;}
-    25%  {left:500px; top:0px;}
-    50%  {left:600px; top:500px;}
-    75%  {left:0px; top:200px;}
-    100% {left:300px; top:400px;}
-  }
+.bloglink img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.imagegroup .game .roll {
+  height: 145px;
+}
+
+.imagegroup .promobig .roll {
+  height: 172px;
+}
+
+.imagegroup .link .roll {
+  height: 30px;
+}
+
+.imagegroup .linktall .roll {
+  height: 70px;
+}
+
+.imagegroup .roll span {
+  position: absolute;
+
+  left: -1000000px;
+  color: #1a1a1a;
+  top: 3px;
+}
+
+.imagegroup .roll:hover span {
+  width: 184px;
+  left: 8px;
+  top: 3px;
+}
+
+.imagegroup .promo .roll:hover span {
+  width: 810px;
+  left: 10px;
+}
+
+.imagegroup .promobig .roll:hover span {
+  width: 810px;
+  left: 10px;
+}
+
+.imagegroup .promohalf .roll:hover span {
+  width: 390px;
+}
+
+.imagegroup .link .roll img {
+  width: 150px;
+}
+
+.imagegroup .game .roll img {
+  width: 200px;
+  height: 145px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.imagegroup .promo .roll img {
+  width: 830px;
+}
+
+.imagegroup .promobig .roll img {
+  width: 830px;
+  height: 172px;
+}
+
+.imagegroup .promohalf .roll img {
+  width: 410px;
+}
+
+.imagegroup .game .roll:hover img {
+  filter: alpha(opacity=10);
+  -moz-opacity: 0.1;
+  khtmlopacity: 0.1;
+  opacity: 0.1;
+}
+
+.imagegroup .link .roll:hover img {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  khtmlopacity: 0.8;
+  opacity: 0.8;
+}
+
+.bloglink:hover img {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  khtmlopacity: 0.8;
+  opacity: 0.8;
+}
