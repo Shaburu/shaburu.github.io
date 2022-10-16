@@ -116,24 +116,24 @@ body{
 
   @keyframes shine {
     from {
-    background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#17c470 )
+    background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#11b465 )
     }
     20% {
-    background-image: linear-gradient(to bottom right,#0dc56c,#0F9D58,#0F9D58,#0F9D58,#0F9D58 )
+    background-image: linear-gradient(to bottom right,#11b465,#0F9D58,#0F9D58,#0F9D58,#0F9D58 )
     }
     40%{
-        background-image: linear-gradient(to bottom right,#0F9D58,#0ed173,#0F9D58,#0F9D58,#0F9D58 )
+        background-image: linear-gradient(to bottom right,#0F9D58,#11b465,#0F9D58,#0F9D58,#0F9D58 )
     }
     60%{
-        background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#12b968,#0F9D58,#0F9D58 )
+        background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#11b465,#0F9D58,#0F9D58 )
 
     }
     80%{
-        background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#23e085,#0F9D58 )
+        background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#11b465,#0F9D58 )
 
     }
     to {
-    background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#23e085 )
+    background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#11b465 )
 }
   }
 
