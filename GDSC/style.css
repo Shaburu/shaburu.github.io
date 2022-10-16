@@ -19,7 +19,9 @@ RED
 	E57368
 	ED9D97
 */
-
+*{
+    overflow: hidden;
+}
 body{
     padding: 0%;
     margin: 0%;
@@ -28,28 +30,23 @@ body{
     overflow: hidden;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;}
+    
+h3{
+    text-align: center;
+    color: white;
+}
+
 #linkwrapper{
     background-color: white;
 }
 
 .important{
     padding: 10px;
-}
-.link{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    padding: 10px;
-    color: #151515;
-    gap: 10px;
-}
-.overlay{
-    position: absolute;
-    object-fit: cover;
-    display: flex;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 .top{
     display: flex;
@@ -142,20 +139,50 @@ body{
       }
   }
 
+.link{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    color: #151515;
+    gap: 20px 10px;
+}
 .box{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
     gap: 10px;
-
 }
-
+.box>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .box>div>a{
         text-decoration: none;     
         color: white; 
         font-size: 20px;
+        box-sizing: border-box;
     }
 
+    .box>div:nth-child(1){
+        border: 3px solid #151515;
+        width: 100%;
+        background-color: #F4B400;
+    }
+    .box>div:nth-child(2){
+        border: 3px solid #151515;
+        width: 100%;
+        background-color: #4285F4;
+    }
+    
+    .box>div:nth-child(3){
+        border: 3px solid #151515;
+        width: 100%;
+        background-color: #0F9D58;
+    }
+    
 .connectlink{
     display: flex;
     gap: 10px;
@@ -170,29 +197,46 @@ body{
     font-size: 64px;
     text-align: center;
     align-items: center;
+    text-decoration: none;
+
+}
+
+.connectlink>div>a>ion-icon{
+    text-decoration: none;
+    color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .connectlink>div>ion-icon{
-      animation: shaburu infinite 1s ease-in-out;
+    .connectlink>div>a>ion-icon{
+      animation: icon infinite 1s ease-in-out;
     }
   }
 
-  @keyframes shaburu {
+  @keyframes icon {
     from {
       transform: translatey(0px);
+      box-shadow: inset 0px 0px 4px -4px lightblue;
+
     }
     45% {
       transform:translatey(8px);
+      box-shadow: inset 0px 20px 4px -4px lightblue;
+
     }
     50% {
         transform:translatey(10px);
+        box-shadow: inset 0px 50px 4px -4px lightblue;
+
       }
     55% {
         transform:translatey(8px);
+        box-shadow: inset 0px 20px 4px -4px lightblue;
+
       }
     to {
         transform: translatey(0px);
+        box-shadow: inset 0px 0px 4px -4px lightblue;
+
       }
   }
 .box1{
@@ -313,32 +357,3 @@ body{
 }
 
 
-
-.box>div:nth-child(1){
-    border: 3px solid #151515;
-    width: 100%;
-    background-color: #F4B400;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box>div:nth-child(2){
-    border: 3px solid #151515;
-    width: 100%;
-    background-color: #4285F4;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box>div:nth-child(3){
-    border: 3px solid #151515;
-    width: 100%;
-    background-color: #0F9D58;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
