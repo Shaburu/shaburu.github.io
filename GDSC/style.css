@@ -109,7 +109,7 @@ body{
 @media (prefers-reduced-motion: no-preference) {
     .box1>div{
         
-      animation: shine infinite 0.4s ease-in-out;
+      animation: shine infinite 3s ease-in-out;
       
     }
   }
@@ -118,19 +118,23 @@ body{
     from {
     background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#11b465 )
     }
-    20% {
+    2% {
     background-image: linear-gradient(to bottom right,#11b465,#0F9D58,#0F9D58,#0F9D58,#0F9D58 )
     }
-    40%{
+    4%{
         background-image: linear-gradient(to bottom right,#0F9D58,#11b465,#0F9D58,#0F9D58,#0F9D58 )
     }
-    60%{
+    6%{
         background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#11b465,#0F9D58,#0F9D58 )
 
     }
-    80%{
+    8%{
         background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#11b465,#0F9D58 )
 
+    }
+    
+    10% {
+        background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#11b465 )
     }
     to {
     background-image: linear-gradient(to bottom right,#0F9D58,#0F9D58,#0F9D58,#0F9D58,#11b465 )
