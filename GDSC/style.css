@@ -1,0 +1,41 @@
+body{
+    background-color:#DB4437;
+    font-family: 'Roboto', sans-serif;
+}
+
+#linkwrapper{
+    background-color: white;
+}
+
+.link{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    padding: 10px;
+    color: #151515;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.box>div{
+    border: 6px solid #151515;
+    width: 100%;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

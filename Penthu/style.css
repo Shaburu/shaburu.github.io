@@ -40,7 +40,7 @@ a {cursor: crosshair;}
     margin: 36px auto 27px auto;
 }
 .link{
-    cursor: crosshair;
+    cursor: pointer;
     position: relative;
     display: block;
     background: #fe0df1;
