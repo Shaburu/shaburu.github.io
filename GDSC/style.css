@@ -19,13 +19,10 @@ RED
 	E57368
 	ED9D97
 */
-*{
-    overflow: hidden;
-}
 body{
     padding: 0%;
     margin: 0%;
-    background: #E57368;
+    background: white /*#E57368;*/;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
@@ -62,7 +59,7 @@ h3{
 .head{
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: black;
     background: linear-gradient(to bottom right,
     #3a7cec 0%25%,
     #2ca24c 25%50%,
@@ -87,8 +84,8 @@ h3{
     }
     25% {
         background-image: linear-gradient(to right,#e33e2b 0%50%,
-        #3a7cec 25%50%,
-        #2ca24c 50%75%,
+        #3a7cec 25%60%,
+        #2ca24c 60%75%,
         #f1b500 75%100%)
     }
     50% {
@@ -106,8 +103,8 @@ h3{
     to{
         
         background-image: linear-gradient(to right,#3a7cec 0%25%,
-        #2ca24c 25%50%,
-        #f1b500 50%75%,
+        #2ca24c 25%60%,
+        #f1b500 60%75%,
         #e33e2b 75%100%)
     }
   }
@@ -115,7 +112,7 @@ h3{
 .head1{
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: black;
     
     justify-content: center;
     align-items: flex-start;
@@ -140,7 +137,6 @@ h3{
   }
 
 .link{
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 2px;
@@ -168,18 +164,15 @@ h3{
 
     .box>div:nth-child(1){
         border: 3px solid #151515;
-        width: 100%;
         background-color: #F4B400;
     }
     .box>div:nth-child(2){
         border: 3px solid #151515;
-        width: 100%;
         background-color: #4285F4;
     }
     
     .box>div:nth-child(3){
         border: 3px solid #151515;
-        width: 100%;
         background-color: #0F9D58;
     }
     
@@ -204,6 +197,7 @@ h3{
 .connectlink>div>a>ion-icon{
     text-decoration: none;
     color: white;
+    padding: 3px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -218,17 +212,22 @@ h3{
       box-shadow: inset 0px 0px 4px -4px lightblue;
 
     }
-    45% {
+    25% {
       transform:translatey(8px);
       box-shadow: inset 0px 20px 4px -4px lightblue;
 
     }
-    50% {
+    40% {
         transform:translatey(10px);
-        box-shadow: inset 0px 50px 4px -4px lightblue;
+        box-shadow: inset 0px 70px 4px -4px lightblue;
 
       }
-    55% {
+    60% {
+        transform:translatey(10px);
+        box-shadow: inset 0px 70px 4px -4px lightblue;
+
+      }
+    75% {
         transform:translatey(8px);
         box-shadow: inset 0px 20px 4px -4px lightblue;
 
