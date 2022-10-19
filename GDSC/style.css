@@ -71,39 +71,47 @@ h3{
 }
 @media (prefers-reduced-motion: no-preference) {
     .head{
-      animation: spin infinite 1s ease-in-out;
+      animation: spin infinite 4s ease-in-out;
     }
   }
   @keyframes spin {
     from {
+        box-shadow: #3a7cec 0px 2px 20px 10px;
         background-image: linear-gradient(to right,#3a7cec 0%25%,
         #2ca24c 25%50%,
         #f1b500 50%75%,
         #e33e2b 75%100%)
     }
     25% {
-        background-image: linear-gradient(to right,#e33e2b 0%50%,
-        #3a7cec 25%60%,
-        #2ca24c 60%75%,
+        box-shadow: #e33e2b 0px 2px 20px 10px;
+
+        background-image: linear-gradient(to right,#e33e2b 0%25%,
+        #3a7cec 25%50%,
+        #2ca24c 50%75%,
         #f1b500 75%100%)
     }
     50% {
-        background-image: linear-gradient(to right,#f1b500 0%50%,
-        #e33e2b 50%60%,
-        #3a7cec 60%75%,
+        box-shadow: #f1b500 0px 2px 20px 10px;
+
+        background-image: linear-gradient(to right,#f1b500 0%25%,
+        #e33e2b 25%50%,
+        #3a7cec 50%75%,
         #2ca24c 75%100%)
     }
     75%{
-        background-image: linear-gradient(to right,#2ca24c 0%50%,
-        #f1b500 50%60%,
-        #e33e2b 60%75%,
+        box-shadow: #2ca24c 0px 2px 20px 10px;
+
+        background-image: linear-gradient(to right,#2ca24c 0%25%,
+        #f1b500 25%50%,
+        #e33e2b 50%75%,
         #3a7cec 75%100%)
     }
     to{
-        
-        background-image: linear-gradient(to right,#3a7cec 0%50%,
-        #2ca24c 50%60%,
-        #f1b500 60%75%,
+        box-shadow: #3a7cec 0px 2px 20px 10px;
+
+        background-image: linear-gradient(to right,#3a7cec 0%25%,
+        #2ca24c 25%50%,
+        #f1b500 50%75%,
         #e33e2b 75%100%)
     }
   }
@@ -145,7 +153,9 @@ h3{
 .box{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
     height: 100%;
     gap: 10px;
 }
@@ -153,6 +163,7 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 50%;
 }
 .box>div>a{
         text-decoration: none;     
@@ -199,6 +210,7 @@ h3{
     padding: 3px;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
     .connectlink>div>a>ion-icon{
       animation: icon infinite 1s ease-in-out;
@@ -208,7 +220,7 @@ h3{
   @keyframes icon {
     from {
       transform: translatey(0px);
-      box-shadow: inset 0px 0px 4px -4px lightblue;
+      box-shadow: inset 0px 0px 4px -4px white;
 
     }
     25% {
@@ -233,7 +245,7 @@ h3{
       }
     to {
         transform: translatey(0px);
-        box-shadow: inset 0px 0px 4px -4px lightblue;
+        box-shadow: inset 0px 0px 4px -4px white;
 
       }
   }
@@ -356,3 +368,38 @@ h3{
 }
 
 
+
+@media (prefers-reduced-motion: no-preference) {
+    .box3>div{
+        
+      animation: shine3 infinite 3s ease-in-out;
+      
+    }
+  }
+
+  @keyframes shine3 {
+    from {
+    background-image: linear-gradient(to right,#f57d6f,#e33e2b,#e33e2b,#e33e2b,#e33e2b )
+    }
+    2% {
+    background-image: linear-gradient(to  right,#e33e2b,#f57d6f,#e33e2b,#e33e2b,#e33e2b )
+    }
+    4%{
+        background-image: linear-gradient(to  right,#e33e2b,#e33e2b,#f57d6f,#e33e2b,#e33e2b )
+    }
+    6%{
+        background-image: linear-gradient(to  right,#e33e2b,#e33e2b,#e33e2b,#f57d6f,#e33e2b )
+
+    }
+    8%{
+        background-image: linear-gradient(to  right,#e33e2b,#e33e2b,#e33e2b,#e33e2b,#f57d6f )
+
+    }
+    
+    10% {
+        background-image: linear-gradient(to  right,#e33e2b,#e33e2b,#e33e2b,#e33e2b,#e33e2b )
+    }
+    to {
+    background-image: linear-gradient(to  right,#e33e2b,#e33e2b,#e33e2b,#e33e2b,#e33e2b )
+}
+  }
