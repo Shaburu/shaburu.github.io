@@ -225,22 +225,22 @@ h3{
     }
     25% {
       transform:translatey(8px);
-      box-shadow: inset 0px 20px 4px -4px lightblue;
+      box-shadow: inset 0px 20px 4px -4px lightcoral;
 
     }
     40% {
         transform:translatey(10px);
-        box-shadow: inset 0px 70px 4px -4px lightblue;
+        box-shadow: inset 0px 70px 4px -4px lightcoral;
 
       }
     60% {
         transform:translatey(10px);
-        box-shadow: inset 0px 70px 4px -4px lightblue;
+        box-shadow: inset 0px 70px 4px -4px lightcoral ;
 
       }
     75% {
         transform:translatey(8px);
-        box-shadow: inset 0px 20px 4px -4px lightblue;
+        box-shadow: inset 0px 20px 4px -4px lightcoral;
 
       }
     to {
@@ -340,6 +340,42 @@ h3{
     justify-content: center;
     align-items: center;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .box2>div{
+        
+      animation: shine2 infinite 2.5s ease-in-out;
+      
+    }
+  }
+
+  @keyframes shine2 {
+    from {
+    background-image: linear-gradient(to bottom right,#76a6f3,#4285F4,#4285F4,#4285F4,#4285F4 )
+    }
+    2% {
+    background-image: linear-gradient(to bottom right,#4285F4,#76a6f3,#4285F4,#4285F4,#4285F4 )
+    }
+    4%{
+        background-image: linear-gradient(to bottom right,#4285F4,#4285F4,#76a6f3,#4285F4,#4285F4 )
+    }
+    6%{
+        background-image: linear-gradient(to bottom right,#4285F4,#4285F4,#4285F4,#76a6f3,#4285F4 )
+
+    }
+    8%{
+        background-image: linear-gradient(to bottom right,#4285F4,#4285F4,#4285F4,#4285F4,#76a6f3 )
+
+    }
+    
+    10% {
+        background-image: linear-gradient(to bottom right,#4285F4,#4285F4,#4285F4,#4285F4,#4285F4 )
+    }
+    to {
+    background-image: linear-gradient(to bottom right,#4285F4,#4285F4,#4285F4,#4285F4,#4285F4 )
+}
+  }
+
 
 .box3>a{
     text-decoration: none;
