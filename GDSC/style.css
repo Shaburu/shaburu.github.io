@@ -94,15 +94,15 @@ h3{
         #2ca24c 75%100%)
     }
     75%{
-        background-image: linear-gradient(to right,#2ca24c 0%25%,
-        #f1b500 25%60%,
+        background-image: linear-gradient(to right,#2ca24c 0%50%,
+        #f1b500 50%60%,
         #e33e2b 60%75%,
         #3a7cec 75%100%)
     }
     to{
         
-        background-image: linear-gradient(to right,#3a7cec 0%25%,
-        #2ca24c 25%60%,
+        background-image: linear-gradient(to right,#3a7cec 0%50%,
+        #2ca24c 50%60%,
         #f1b500 60%75%,
         #e33e2b 75%100%)
     }
