@@ -84,19 +84,19 @@ nav li ui:hover{
   width: 100px;
 }
 
-.content div:nth-child(1){
+.content div:nth-child(odd){
   background-color: var(--nodedark);
 }
-.content div:nth-child(2){
+.content div:nth-child(even){
   background-color: var(--nodelighter);
 }
 
 
-.content div:hover:nth-child(1) , .content div:active:nth-child(1){
+.content div:hover:nth-child(odd) , .content div:active:nth-child(1){
   background-color: var(--nodelighter);
 }
 
-.content div:hover:nth-child(2), .content div:active:nth-child(2){
+.content div:hover:nth-child(even), .content div:active:nth-child(2){
   background-color: var(--nodedark);
 }
 
