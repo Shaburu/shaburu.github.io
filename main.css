@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
 
+*{--htbgreen: #9fef00;
+  --node:#141d2b;
+  --htbgrey: #a4b1cd;
+  --azure: #0086ff;
+  --nugget:#ffaf00;
+  --malware:#ff3e3e;
+  --purple:#9f00ff;
+  --aquamarine:#2ee7b6;
+  --nodelighter: #1e2d44;
+  --nodedark: #0d121b;
+}
+
 .grid-container {
   background-color: rgba(144, 223, 243, 0.295);
 }
@@ -24,13 +36,89 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #17141d;
-  color: white;
+  background-color:var(--node);
+  color: var(--htbgrey);
   font-family: "DM Mono", monospace;
 }
 
+nav{
+  margin: 0;
+  border: none;
+  background-color: var(--htbgrey);
+  color:var(--node);
+  display: flex;
+  padding: 1% 1% 1% 0%;
+  list-style-type: none;  
+  font-weight: bolder;
+}
+
+
+nav li{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  padding-left: 10% ;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+nav li ui:hover{
+  cursor: pointer;
+  color: var(--htbgreen);
+}
+
+.message{
+  padding: 0% 0% 1% 10%;
+}
+.content div{
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content img{
+  padding: 1% 10% 1% 0%;
+  height: 100px;
+  width: 100px;
+}
+
+.content div:nth-child(1){
+  background-color: var(--nodedark);
+}
+.content div:nth-child(2){
+  background-color: var(--nodelighter);
+}
+
+
+.content div:hover:nth-child(1) , .content div:active:nth-child(1){
+  background-color: var(--nodelighter);
+}
+
+.content div:hover:nth-child(2), .content div:active:nth-child(2){
+  background-color: var(--nodedark);
+}
+
+.header{
+  padding-left: 10%;
+}
+
+
+.header:hover span {
+  display: none;
+}
+.header h1:hover:before, .header h1:active:before{
+  content: "👋"
+}
+
 a {
+  color: var(--node);
   text-decoration: none;
+}
+
+a:hover, a:active{
+  color: var(--htbgreen);
 }
 
 .card-list {
