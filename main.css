@@ -68,22 +68,65 @@ nav li ui:hover{
 }
 
 .message{
-  padding: 0% 0% 1% 10%;
+  padding: 0% 10% 2% 10%;
 }
 .content div{
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0% 10% 0% 10%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+
+  --maxline: 3;
+  --lineheight: 1.4;
+
+  height: calc(var(--maxline)*1em*var(--lineheight));
+  line-height: var(--lineheight);
+  overflow: hidden;
+  position: relative;
 }
 
+
+.content h3{
+  margin: 0% 5% 0% 0%;
+  align-self: center;
+}
+
+
+.content p{
+  margin: 1% 0% 0% 0%;
+  align-self: flex-start;
+}
+
+
+
 .content img{
-  padding: 1% 10% 1% 0%;
+  margin: 0% 5% 0% 0%;
   max-height: 100px;
   max-width: 100px;
   min-width: none;
   min-height: auto;
+  align-self: center;
+}
+
+.content div:nth-child(odd) p::before{
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--lineheight));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--nodedark));
+}
+
+
+.content div:nth-child(even) p::before{
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--lineheight));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--nodelighter));
+
 }
 
 .content div:nth-child(odd){
@@ -97,6 +140,7 @@ nav li ui:hover{
 .content div:hover:nth-child(odd) , .content div:active:nth-child(1){
   color: var(--htbgreen);
 }
+
 
 .content div:hover:nth-child(even), .content div:active:nth-child(2){
   color: var(--malware);
@@ -121,6 +165,32 @@ a {
 
 a:hover, a:active{
   color: var(--htbgreen);
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  padding: 0% 10% 0% 10%;
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: large;
+}
+.socials a{
+  color: var(--malware);
+}
+
+.socials a:hover{
+  color: var(--htbgreen);
+}
+
+.socials img{
+  margin: 1% 10% 0% 0%;
+}
+
+footer{
+  margin: 0% 15% 0% 30%;
+  bottom: 0;
+  position: absolute;
 }
 
 .card-list {
