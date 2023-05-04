@@ -80,8 +80,10 @@ nav li ui:hover{
 
 .content img{
   padding: 1% 10% 1% 0%;
-  height: 100px;
-  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  min-width: none;
+  min-height: auto;
 }
 
 .content div:nth-child(odd){
@@ -93,11 +95,11 @@ nav li ui:hover{
 
 
 .content div:hover:nth-child(odd) , .content div:active:nth-child(1){
-  background-color: var(--nodelighter);
+  color: var(--htbgreen);
 }
 
 .content div:hover:nth-child(even), .content div:active:nth-child(2){
-  background-color: var(--nodedark);
+  color: var(--malware);
 }
 
 .header{
