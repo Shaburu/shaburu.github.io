@@ -185,8 +185,8 @@ a:hover, a:active{
 
 .socials img{
   margin: 1% 10% 0% 0%;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 40vh;
+  max-height: 40vh;
 }
 
 footer{
