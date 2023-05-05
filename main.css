@@ -185,12 +185,14 @@ a:hover, a:active{
 
 .socials img{
   margin: 1% 10% 0% 0%;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 footer{
-  margin: 0% 15% 0% 30%;
-  bottom: 0;
-  position: absolute;
+  margin: 20% 30% 0% 30%;
+  display: flex;
+  align-items: center;
 }
 
 .card-list {
