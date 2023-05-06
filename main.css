@@ -47,9 +47,9 @@ nav{
   background-color: var(--htbgrey);
   color:var(--node);
   display: flex;
-  padding: 1% 1% 1% 0%;
   list-style-type: none;  
   font-weight: bolder;
+  font-size: large;
 }
 
 
@@ -57,7 +57,7 @@ nav li{
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
-  padding-left: 10% ;
+  padding:0.5rem 1.5rem 0  1.5rem;
   justify-content: space-between;
   align-items: center;
   }
@@ -67,8 +67,25 @@ nav li ui:hover{
   color: var(--htbgreen);
 }
 
+.header{
+  padding-left: 1.5rem;
+}
+
+.header h1{
+  display: flex;
+}
+
+
+.header:hover span {
+  display: none;
+}
+
+.header h1:hover:before, .header h1:active:before{
+  content: "🫰"
+}
+
 .message{
-  padding: 0% 10% 2% 10%;
+  padding: 0% 1.5rem 1rem 1.5rem;
 }
 
 .message h1{
@@ -76,7 +93,7 @@ nav li ui:hover{
 }
 
 .content div{
-  padding: 0% 10% 0% 10%;
+  padding: 0% 1.5rem 0% 1.5rem;
   display: flex;
   flex-direction: row;
 
@@ -91,20 +108,20 @@ nav li ui:hover{
 
 
 .content h3{
-  margin: 0% 5% 0% 0%;
+  margin: 0% 1rem 0% 0%;
   align-self: center;
 }
 
 
 .content p{
-  margin: 1% 0% 0% 0%;
+  margin: 0.1rem 0% 0% 0%;
   align-self: flex-start;
 }
 
 
 
 .content img{
-  margin: 0% 5% 0% 0%;
+  margin: 0% 1rem 0% 0%;
   max-height: 100px;
   max-width: 100px;
   min-width: none;
@@ -151,18 +168,6 @@ nav li ui:hover{
   color: var(--malware);
 }
 
-.header{
-  padding-left: 10%;
-}
-
-
-.header:hover span {
-  display: none;
-}
-.header h1:hover:before, .header h1:active:before{
-  content: "👋"
-}
-
 a {
   color: var(--node);
   text-decoration: none;
@@ -175,7 +180,7 @@ a:hover, a:active{
 .socials{
   display: flex;
   flex-direction: row;
-  padding: 0% 10% 0% 10%;
+  padding: 0.5rem 1.5rem 0% 1.5rem;
   list-style-type: none;
   font-weight: bolder;
   font-size: large;
@@ -189,7 +194,7 @@ a:hover, a:active{
 }
 
 .socials img{
-  margin: 1% 10% 0% 0%;
+  margin: 1% 1.5rem 0% 0%;
   max-width: 40vh;
   max-height: 40vh;
 }
