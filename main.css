@@ -173,6 +173,10 @@ a {
   text-decoration: none;
 }
 
+.content a{
+  color: var(--htbgrey);
+  cursor: pointer;
+}
 a:hover, a:active{
   color: var(--htbgreen);
 }
@@ -207,6 +211,71 @@ footer{
   text-align: center;
 }
 
+@media (width >600px) {
+  p{
+    font-size: 1.25rem;
+  }
+  header{
+    margin:0 3rem 0 3rem;
+  } 
+  .socials{
+    margin:0 3rem 0 3rem;
+  } 
+  .message{
+    margin:0 3rem 0 3rem;
+  } 
+
+  .content div{
+    padding: 0 4.5rem 0 4.5rem;
+    height: 7rem;
+  }
+
+  .content img{
+    max-height: 7rem;
+    max-width: 14rem;
+    width: auto;
+  }
+  nav{
+    padding: 0 3rem 0 3rem;
+  }
+  .blog-content{
+    padding:0 3rem 0 3rem;
+
+  }
+}
+
+@media (width <= 600px) {
+  .blog-content {
+    padding:0 1.2rem 0 1.2rem;
+  }
+  .blog-content div{
+   overflow: hidden;
+  }
+}
+
+.blog-content {
+  display: flex;
+  align-items: center;
+}
+
+.blog-content div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color:var(--htbgreen);
+  margin: 0.5em 0 0 0;
+}
+
+.blog-content div img{
+  max-width: 550px;
+}
+
+.blog-content div p{
+  font-size: 1.2rem;
+  color: var(--htbgrey);
+}
+/*
 .card-list {
   display: flex;
   padding: 3rem;
@@ -458,3 +527,5 @@ footer{
   background-clip: text;
   border-color: white;
 }
+
+*/
