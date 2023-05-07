@@ -239,22 +239,22 @@ footer{
   text-align: center;
 }
 
-@media (width >600px) {
+@media (width >768px) {
   p{
     font-size: 1.25rem;
   }
   header{
-    margin:0 3rem 0 3rem;
+    margin:0 10rem 0 10rem;
   } 
   .socials{
-    margin:0 3rem 0 3rem;
+    margin:0 10rem 0 10rem;
   } 
   .message{
-    margin:0 3rem 0 3rem;
+    margin:0 10rem 0 10rem;
   } 
 
   .content div{
-    padding: 0 4.5rem 0 4.5rem;
+    padding: 0 11.5rem 0 11.5rem;
     height: 7rem;
   }
 
@@ -264,7 +264,7 @@ footer{
     width: auto;
   }
   nav{
-    padding: 0 3rem 0 3rem;
+    padding: 0 10rem 0 10rem;
   }
   .blog-content{
     padding:0 3rem 0 3rem;
@@ -272,7 +272,21 @@ footer{
   }
 }
 
-@media (width <= 600px) {
+@media (width <= 768px) {
+  
+  p{
+    font-size: 1.1rem;
+  }
+  .content div{
+    padding: 0 1.5rem 0 1.5rem;
+    height: 7rem;
+  }
+
+  .content img{
+    max-height: 7rem;
+    max-width: 14rem;
+    width: auto;
+  }
   .blog-content {
     padding:0 1.2rem 0 1.2rem;
   }
