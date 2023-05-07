@@ -190,7 +190,30 @@ a:hover, a:active{
   font-size: large;
 }
 .socials a{
-  color: var(--malware);
+  color: var(--azure);
+}
+
+@media  (prefers-reduced-motion: no-preference) {
+  /* change color animation of font */
+  .socials a{
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  /* define the color change animation */
+  @keyframes color-change {
+    0% {
+      color: var(--htbgrey);
+    }
+    50% {
+      color: var(--nodelighter);
+    }
+    100% {
+      color: var(--htbgrey);
+    }
+  }
 }
 
 .socials a:hover{
