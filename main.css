@@ -189,6 +189,11 @@ a:hover, a:active{
   font-weight: bolder;
   font-size: large;
 }
+
+.socials h2{
+  color: var(--azure);
+}
+
 .socials a{
   color: var(--azure);
 }
