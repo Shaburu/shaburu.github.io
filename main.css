@@ -195,12 +195,12 @@ a:hover, a:active{
 }
 
 .socials a{
-  color: var(--azure);
+  color: var(--htbgrey);
 }
 
 @media  (prefers-reduced-motion: no-preference) {
   /* change color animation of font */
-  .socials a{
+  .socials h2{
     animation-name: color-change;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -210,13 +210,18 @@ a:hover, a:active{
   /* define the color change animation */
   @keyframes color-change {
     0% {
-      color: var(--htbgrey);
+      color: var(--azure);
+      scale: 1;
     }
     50% {
-      color: var(--nodelighter);
+      color: var(--htbgrey);
+      scale: 1.1;
+
     }
     100% {
-      color: var(--htbgrey);
+      color: var(--azure);
+      scale: 1;
+
     }
   }
 }
