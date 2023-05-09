@@ -249,17 +249,17 @@ footer{
     font-size: 1.25rem;
   }
   header{
-    margin:0 10rem 0 10rem;
+    margin:0 15rem 0 15rem;
   } 
   .socials{
-    margin:0 10rem 0 10rem;
+    margin:0 15rem 0 15rem;
   } 
   .message{
-    margin:0 10rem 0 10rem;
+    margin:0 15rem 0 15rem;
   } 
 
   .content div{
-    padding: 0 11.5rem 0 11.5rem;
+    padding: 0 16.5rem 0 16.5rem;
     height: 7rem;
   }
 
@@ -269,10 +269,10 @@ footer{
     width: auto;
   }
   nav{
-    padding: 0 10rem 0 10rem;
+    padding: 0 15rem 0 15rem;
   }
   .blog-content{
-    padding:0 3rem 0 3rem;
+    padding:0 15rem 0 15rem;
 
   }
 }
