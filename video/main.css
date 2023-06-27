@@ -1,0 +1,96 @@
+
+*{--htbgreen: #9fef00;
+    --node:#141d2b;
+    --htbgrey: #a4b1cd;
+    --azure: #0086ff;
+    --nugget:#ffaf00;
+    --malware:#ff3e3e;
+    --purple:#9f00ff;
+    --aquamarine:#2ee7b6;
+    --nodelighter: #1e2d44;
+    --nodedark: #0d121b;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--nodelighter);
+    color: var(--htbgrey);
+    font-family: "DM Mono", monospace;
+  }
+  
+  
+nav{
+    margin: 0;
+    border: none;
+    background-color: var(--htbgrey);
+    color:var(--node);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;  
+    font-weight: bolder;
+    font-size: large;
+    width: 100%;
+    height: 60px;
+  }
+  
+  
+  nav li{
+    display: flex;
+    column-gap: 20px;
+    padding:0.5rem 1.5rem 0  1.5rem;
+    align-items: center;
+    }
+
+    
+  nav li ui{
+    display: flex;
+    column-gap: 20px;
+    padding:0.5rem 1.5rem 0  1.5rem;
+    align-items: center;
+    }
+  
+  
+  nav li ui:hover{
+    cursor: pointer;
+    color: var(--htbgreen);
+  }
+
+a {
+    color: var(--node);
+    text-decoration: none;
+    
+  }
+
+  button-new{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7%;
+    background-color: var(--node);
+    color: var(--malware);
+    margin: 1px 10px 10px 10px;
+    min-width: 100px;
+    border-radius: 7px;
+  }
+  
+
+  button:hover{
+    cursor: pointer;
+  }
+
+  video{
+    display: block;
+    max-width: 90%;
+    padding:0.5rem 1.5rem 0  1.5rem;
+  }
+
+.bodyt{
+    background-color: red;
+    padding:0.5rem 1.5rem 0  1.5rem;
+}
