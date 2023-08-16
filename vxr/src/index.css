@@ -14,9 +14,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
+*{--htbgreen: #9fef00;
+  --node:#141d2b;
+  --htbgrey: #a4b1cd;
+  --azure: #0086ff;
+  --nugget:#ffaf00;
+  --malware:#ff3e3e;
+  --purple:#9f00ff;
+  --aquamarine:#2ee7b6;
+  --nodelighter: #1e2d44;
+  --nodedark: #0d121b;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--htbgreen);
   text-decoration: inherit;
 }
 a:hover {
