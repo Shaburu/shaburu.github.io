@@ -1,10 +1,14 @@
 @font-face {
   font-family: 'mario';
-  src: url(I:\Github\shaburu.github.io\vxr\public\mario.ttf);
+  src: url(/mario.ttf);
 }
 @font-face {
   font-family: 'valo';
-  src: url(I:\Github\shaburu.github.io\vxr\public\valo.ttf);
+  src: url(/valo.ttf);
+}
+@font-face {
+  font-family: 'futura';
+  src: url(/futura.ttf);
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -13,7 +17,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  /* THIS MAKES THE WHOLE BACKGROUND probably breaking due to blogbody */
+  background-color: var(--node);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,7 +43,123 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+
+  --content-gap: 20px;
+--nav-width: 1024px;
+--main-width: 720px;
+--header-height: 60px;
+--footer-height: 60px;
+--radius: 8px;
+--gap:24px;
+--wildVar: calc(var(--main-width) + var(--gap) * 2)
 }
+h1{
+  font-family:'futura';
+  font-size: 50px;
+  color: var(--malware);
+}
+
+.message{
+  font-family: 'futura';
+  font-size: 30px;
+  text-align:justify;
+}
+
+
+.item1 { grid-area: menu;
+    text-align: justify;
+    margin-right: 1rem;
+    font-size:19px;
+    
+ }
+.item2 { 
+  grid-area: footer;
+  background-color: var(--malware);
+  font-weight: 900;
+  padding: 0rem 1rem 0.5rem 1rem;
+  text-shadow: 2px 2px 0px  var(--node),  2px 3px 0px  var(--node); 
+}
+
+.item2>div:hover{
+  text-shadow: none;
+}
+
+.item2 > p{
+  text-shadow: none;
+  text-decoration:line-through;
+  text-decoration-thickness: 9px;
+  text-decoration-color: #9fef004f;
+}
+
+.paraThree {
+  display: grid;
+  grid-template-areas:
+    'menu footer footer footer footer footer'
+    'menu footer footer footer footer footer';
+  font-size: 20px;
+}
+
+
+.cleo { 
+  grid-area: menu;
+}
+
+.cleo > a >img{ 
+  width: 100%;
+  height: 100%;
+}
+.cleoWord { 
+grid-area: footer;
+font-size: 15px;
+padding-left: 1em;
+}
+
+
+
+.cleopatra {
+display: grid;
+grid-template-areas:
+  'menu menu menu  menu footer'
+  'menu menu menu menu footer';
+}
+
+
+hr{
+  color: var(--malware);
+  }
+
+.blogBody{  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
+}
+
+@media (max-width:520px) {
+  
+.blogBody{position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
+}
+
+.h1{
+  
+  font-family:'futura';
+  font-size: 50px;
+  color: var(--malware);
+}
+}
+  
+
+.code-style {
+  font-size: 20px;
+  line-height: 28px;
+  background-color: lightblue;
+  color: #ffffff;
+}
+
 a {
   font-weight: 500;
   color: var(--htbgreen);

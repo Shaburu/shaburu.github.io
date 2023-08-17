@@ -17,12 +17,14 @@
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--nodedark);
     color: white;
     position: sticky;
-    top: 0;
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin-top: 10px;
+    margin: auto;
 }
 
 nav .title {
@@ -32,15 +34,16 @@ nav .title {
     text-decoration: none;
     color: var(--malware);
     animation: titleDance 5s infinite;
+    margin: 0rem 0rem 0rem 1rem;
 }
 
 @keyframes titleDance {
-0% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
-    20%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
-    40% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
-    60%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
-    80% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
-    100%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
+0% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
+    20%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);   }
+    40% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
+    60%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    }
+    80% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
+    100%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget); }
 
 }
 
@@ -72,12 +75,12 @@ nav ul li a:not(.active):hover {
 nav .menu {
     display: none;
     position: absolute;
-    top: 1.55rem;
+    top: 0.75rem;
     right: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
     width: 2.25rem;
-    height: 2.5rem;
+    height: 2rem;
 }
 
 nav .menu span {
