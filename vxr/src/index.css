@@ -53,12 +53,6 @@
 --gap:24px;
 --wildVar: calc(var(--main-width) + var(--gap) * 2)
 }
-h1{
-  font-family:'futura';
-  font-size: 50px;
-  color: var(--malware);
-}
-
 .message{
   font-family: 'futura';
   font-size: 30px;
@@ -99,6 +93,12 @@ h1{
   font-size: 20px;
 }
 
+.cleoTit >a { 
+  color: #ffaf00;
+  font-size: 25px;
+  font-family: 'valo';
+}
+
 
 .cleo { 
   grid-area: menu;
@@ -135,6 +135,14 @@ hr{
   padding: var(--gap);
 }
 
+h1{
+  font-family:'futura';
+  font-size: 50px;
+  color: var(--malware);
+  line-height: 2.9rem;  
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 @media (max-width:520px) {
   
 .blogBody{position: relative;
@@ -167,5 +175,7 @@ a {
 }
 a:hover {
   color: var(--htbgrey);
+  cursor: pointer;
 }
+
 

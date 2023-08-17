@@ -3,8 +3,8 @@ import React from "react";
 export const Blog = () => {
   return (
 
-<div className="blogBody">
-<h1>BLOG</h1>
+<div>
+<h1>Coming SOon...</h1>
 </div>
   );
 };
