@@ -1,0 +1,120 @@
+
+*{--htbgreen: #9fef00;
+    --node:#141d2b;
+    --htbgrey: #a4b1cd;
+    --azure: #0086ff;
+    --nugget:#ffaf00;
+    --malware:#ff3e3e;
+    --purple:#9f00ff;
+    --aquamarine:#2ee7b6;
+    --nodelighter: #1e2d44;
+    --nodedark: #0d121b;
+}  
+
+.active{
+    background-color: var(--nodelighter);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nodedark);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .title {
+    font-family: 'mario';
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    color: var(--malware);
+    animation: titleDance 5s infinite;
+}
+
+@keyframes titleDance {
+0% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
+    20%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
+    40% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
+    60%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
+    80% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    margin: 1rem;}
+    100%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    margin: 1rem;}
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'valo';
+    font-size: large;
+    text-decoration: none;
+    color: var(--htbgreen);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* IMPORTANT LEARN THIS a:not 
+for when you dont wanna activate the already activated */
+nav ul li a:not(.active):hover {
+    background-color: var(--node);
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 1.55rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2.5rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: var(--htbgreen);
+    border-radius: 0.13rem;
+}
+
+
+@media (max-width: 520px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
