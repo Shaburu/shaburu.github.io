@@ -20,15 +20,14 @@ export const Home = () => {
       </div>
       <div className="paraThree">
         <div className="item1">
-        Altough this might seem random but the UX is designed such that you read this last
+        Altough this might seem random but the UX is designed such that you read this para last,
         aka <b>Joe Sugarman's Slippery Slope.</b> I delivered Twice as much info as i could have.
         Below are my Projects and lastly my links and stuff. 
-        I one day wish to Expand the human society to Type V Kardeshev 
-        Civilization. Till then i will work on NeRFs, Agri-Tech, Generative UIs
-        and a lot of stupid projects along the way! like my Annoyinator&#8482; (coming soon)
+        I one day wish to Expand the human society to Type V Civilization
+        on the Kardashev Scale. Till then i will work on NeRFs, Agri-Tech, ML and OpenCV
+        also a lot of stupid projects along the way! like my Annoyinator&#8482; (coming soon)
         which let's you sign up any email to 1287 Newsletters 
         <sup>  &#9834;doofenshmirtz evil incorporated&#9835;</sup>
-        <hr/>
         </div>
 
  <div className="item2">

@@ -9,6 +9,11 @@
     --aquamarine:#2ee7b6;
     --nodelighter: #1e2d44;
     --nodedark: #0d121b;
+    --cartoonRed: #ea4f5e;
+    --cartoonYellow: #f6c348;
+    --cartoonGreen:	#40e7b9;
+    --cartoonBlue:#4f73f4;
+    --cartoonViolet:#da65f9;
 }  
 
 .active{
@@ -38,12 +43,12 @@ nav .title {
 }
 
 @keyframes titleDance {
-0% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
-    20%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);   }
-    40% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
-    60%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);    }
-    80% {text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);   }
-    100%{text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget); }
+    0% {text-shadow: 2px 2px 0px  var(--azure), -2px -2px 0px  var(--azure) , 2px -2px 0px  var(--azure), -2px 2px 0px  var(--azure);   }
+    20%{text-shadow: 2px 2px 0px  var(--aquamarine), -2px -2px 0px  var(--aquamarine) , 2px -2px 0px  var(--aquamarine), -2px 2px 0px  var(--aquamarine);   }
+    40% {text-shadow: 2px 2px 0px  var(--htbgrey), -2px -2px 0px  var(--htbgrey) , 2px -2px 0px  var(--htbgrey), -2px 2px 0px  var(--htbgrey);   }
+    60%{text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    }
+    80% {text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);   }
+    100%{text-shadow: 2px 2px 0px  var(--azure), -2px -2px 0px  var(--azure) , 2px -2px 0px  var(--azure), -2px 2px 0px  var(--azure); }
 
 }
 
@@ -86,7 +91,7 @@ nav .menu {
 nav .menu span {
     height: 0.4rem;
     width: 100%;
-    background-color: var(--htbgreen);
+    background-color: var(--htbgrey);
     border-radius: 0.13rem;
 }
 
