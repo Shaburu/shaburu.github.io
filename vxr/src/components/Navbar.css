@@ -8,6 +8,7 @@
     --purple:#9f00ff;
     --aquamarine:#2ee7b6;
     --nodelighter: #1e2d44;
+    --nodeMoreLighter:#21334d;
     --nodedark: #0d121b;
     --cartoonRed: #ea4f5e;
     --cartoonYellow: #f6c348;
@@ -30,6 +31,7 @@ nav {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin-top: 10px;
     margin: auto;
+    padding: 0px var(--gap);
 }
 
 nav .title {
@@ -39,16 +41,15 @@ nav .title {
     text-decoration: none;
     color: var(--malware);
     animation: titleDance 5s infinite;
-    margin: 0rem 0rem 0rem 1rem;
 }
 
 @keyframes titleDance {
-    0% {text-shadow: 2px 2px 0px  var(--azure), -2px -2px 0px  var(--azure) , 2px -2px 0px  var(--azure), -2px 2px 0px  var(--azure);   }
-    20%{text-shadow: 2px 2px 0px  var(--aquamarine), -2px -2px 0px  var(--aquamarine) , 2px -2px 0px  var(--aquamarine), -2px 2px 0px  var(--aquamarine);   }
-    40% {text-shadow: 2px 2px 0px  var(--htbgrey), -2px -2px 0px  var(--htbgrey) , 2px -2px 0px  var(--htbgrey), -2px 2px 0px  var(--htbgrey);   }
-    60%{text-shadow: 2px 2px 0px  var(--htbgreen), -2px -2px 0px  var(--htbgreen) , 2px -2px 0px  var(--htbgreen), -2px 2px 0px  var(--htbgreen);    }
-    80% {text-shadow: 2px 2px 0px  var(--nugget), -2px -2px 0px  var(--nugget) , 2px -2px 0px  var(--nugget), -2px 2px 0px  var(--nugget);   }
-    100%{text-shadow: 2px 2px 0px  var(--azure), -2px -2px 0px  var(--azure) , 2px -2px 0px  var(--azure), -2px 2px 0px  var(--azure); }
+    0% {text-shadow: 2px 2px 0px  var(--nodeMoreLighter), -2px -2px 0px  var(--nodeMoreLighter) , 2px -2px 0px  var(--nodeMoreLighter), -2px 2px 0px  var(--nodeMoreLighter);   }
+    20%{text-shadow: 2px 2px 0px  var(--nodelighter), -2px -2px 0px  var(--nodelighter) , 2px -2px 0px  var(--nodelighter), -2px 2px 0px  var(--nodelighter);   }
+    40% {text-shadow: 2px 2px 0px  var(--nodeMoreLighter), -2px -2px 0px  var(--nodeMoreLighter) , 2px -2px 0px  var(--nodeMoreLighter), -2px 2px 0px  var(--nodeMoreLighter);   }
+    60%{text-shadow: 2px 2px 0px  var(--nodelighter), -2px -2px 0px  var(--nodelighter) , 2px -2px 0px  var(--nodelighter), -2px 2px 0px  var(--nodelighter);    }
+    80% {text-shadow: 2px 2px 0px  var(--nodeMoreLighter), -2px -2px 0px  var(--nodeMoreLighter) , 2px -2px 0px  var(--nodeMoreLighter), -2px 2px 0px  var(--nodeMoreLighter);   }
+    100%{text-shadow: 2px 2px 0px  var(--nodelighter), -2px -2px 0px  var(--nodelighter) , 2px -2px 0px  var(--nodelighter), -2px 2px 0px  var(--nodelighter); }
 
 }
 
@@ -81,7 +82,7 @@ nav .menu {
     display: none;
     position: absolute;
     top: 0.75rem;
-    right: 0.5rem;
+    right: var(--gap);
     flex-direction: column;
     justify-content: space-between;
     width: 2.25rem;

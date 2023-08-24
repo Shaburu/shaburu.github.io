@@ -1,9 +1,8 @@
-import React from "react";
 
 export const Blog = () => {
   return (
 
-<div>
+<div className="blogBodyTSX">
 <h1>Coming SOon...</h1>
 </div>
   );
