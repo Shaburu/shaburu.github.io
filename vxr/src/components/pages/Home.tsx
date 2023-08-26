@@ -47,7 +47,55 @@ export const Home = () => {
 </div>
 
 <div className="restBody">
-<h3 className="cleoTit"><Link to="/mushroom" >Mushroom Chamber &#128279;</Link></h3>
+
+
+<h2><Link to="/blog">Blogs</Link></h2>
+
+<div className="content">
+    
+        <Link to="/blog">
+        <div>
+          <img src="\mushHabitat.jpg" />
+          <p>
+          <h3>
+          Computer Vision and Machine Learning to build an Advanced Mushroom Habitat  
+          </h3>
+          The primary objective of this research is to uncover the optimal growth conditions for various mushroom species. Through a meticulous process of cultivating mushrooms on agar plates, we aim to identify the specific temperature, humidity, light, and nutrient levels that promote their robust development. By meticulously documenting each growth stage and comparing the effects of varying factors, we hope to refine cultivation techniques for both culinary and medicinal mushroom varieties.
+          </p>
+        </div>
+        </Link>
+        
+        <Link to="/blog">
+        <div>
+          <img src="\face.gif" />
+          <p>
+          <h3> Project</h3>  
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </Link>
+
+        
+        <Link to="/blog">
+        <div>
+          <img src="\face.gif" />
+          <p>
+          <h3> Project</h3>  
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </Link>
+        
+        <Link to="/blog">
+        <div>
+          <img src="\face.gif" />
+          <p>
+          <h3> Project</h3>  
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </Link>
+       
+        
+  </div>
+      <h3 className="cleoTit"><Link to="/mushroom" >Mushroom Chamber &#128279;</Link></h3>
       <div className="cleopatra">
         <p className="cleo"><Link to="/mushroom">
           <img src="/mush.gif" alt="cleopatra an ai virtual assistant with purple hair and celestial body" />
@@ -62,9 +110,6 @@ export const Home = () => {
           {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScL5KAuP0R7oZApncHH1aanYFCK9dT5PTG2j7pawV1wrGUd6w/viewform?embedded=true" width="300px" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
        </p>
       </div>
-
-<h2><Link to="/projects" >More Projectsss</Link></h2>
-
 {/* <h2><Link to="/blog" className="restBody">Blogssss</Link></h2>
 <br/>
 <h2><Link to="/contact" className="restBody">Contactss</Link></h2> */}
