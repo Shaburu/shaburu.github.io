@@ -64,6 +64,15 @@ export const Home = () => {
           </p>
         </div>
         </Link>
+
+        <Link to="/blog">
+        <div>
+          <img src="\face.gif" />
+          <p>
+          <h3> Augmented Reality Development using SparkAR and JavaScript!</h3>  
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </Link>
         
         <Link to="/blog">
         <div>
@@ -84,23 +93,18 @@ export const Home = () => {
         </div>
         </Link>
         
-        <Link to="/blog">
-        <div>
-          <img src="\face.gif" />
-          <p>
-          <h3> Project</h3>  
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        </Link>
+        
        
         
   </div>
+
       <h3 className="cleoTit"><Link to="/mushroom" >Mushroom Chamber &#128279;</Link></h3>
       <div className="cleopatra">
         <p className="cleo"><Link to="/mushroom">
           <img src="/mush.gif" alt="cleopatra an ai virtual assistant with purple hair and celestial body" />
           </Link></p>
         <p className="cleoWord">
+          <h3>OPEN-SOURCED, PLEASE CONTRIBUTE</h3>
           A platform for enthusiasts, hobbyists, and researchers to cultivate mushrooms with precision and efficiency.
           We're designing a state-of-the-art chamber that leverages cutting-edge technology to provide the optimal environment for mushroom growth. 
           And here's the exciting part: it's open-source. This means that every step of our design, every bit of our code, will be freely available to all. 
