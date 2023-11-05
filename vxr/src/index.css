@@ -3,6 +3,20 @@
   src: url(/mario.ttf);
 }
 @font-face {
+  font-family: 'jakarta';
+  src: url(/jakarta.ttf);
+}
+
+@font-face {
+  font-family: 'Bowlbey';
+  src: url(/Bowlbey.ttf);
+}
+
+@font-face {
+  font-family: 'jakarta';
+  src: url(/jakarta.ttf);
+}
+@font-face {
   font-family: 'valo';
   src: url(/valo.ttf);
 }
@@ -19,7 +33,7 @@
   color: rgba(255, 255, 255, 0.87);
 
   /* THIS MAKES THE WHOLE BACKGROUND probably breaking due to blogbody */
-  background-color: var(--node);
+  background-color: var(--red100);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,6 +52,8 @@
   --aquamarine:#2ee7b6;
   --nodelighter: #1e2d44;
   --nodedark: #0d121b;
+  --red100: #F5776B;
+  --black100: #1B1B1B;
 
   box-sizing: border-box;
   margin: 0;

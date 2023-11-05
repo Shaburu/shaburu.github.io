@@ -6,6 +6,7 @@ export const Home = () => {
   
 <div className="blogBody">
 <div > <h1>
+  
    Hey! I work with Computer Vision, AI and build
     IoTs & Fullstack WebApps.
    <img src='/melt.png' alt="Melting Face on Apple iOS 16.4" width="32" height="32" />
